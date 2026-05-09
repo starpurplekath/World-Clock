@@ -2,28 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>World Clock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+   
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>World clock</h1>
+        <h1>World Clock</h1>
         <select id="timezone-select">
-            <option value="">Select a city</option>
-            <option value="America/New_York">New York</option>
-            <option value="Europe/London">London</option>
-            <option value="Asia/Tokyo">Tokyo</option>
-            <option value="Auckland">Auckland</option>
-        </select>
+    <option value="">Select a city</option>
+    <option value="America/New_York">New York</option>
+    <option value="Europe/London">London</option>
+    <option value="Asia/Tokyo">Tokyo</option>
+    <option value="Pacific/Auckland">Auckland</option>
+</select>
+
     </div>
-    <div class="city">
+    <div class="timezone" id="timezone">
+    <div class="city" id="los-angeles">
         <div>
         <h2>Los Angeles 🇺🇸</h2>
     <div class="date">August 15th, 2024</div>
     </div>
     <div class="time">12:00:00 <small>PM</small></div>
     </div>
+    </div>
+
+    <div class="city" id="paris">
+        <div>
+        <h2>Paris 🇫🇷</h2>
+    <div class="date">August 15th, 2024</div>
+    </div>
+    <div class="time">12:00:00 <small>PM</small></div>
+    </div>
+
+    <div class="city" id="tokyo">
+        <div>
+        <h2>Tokyo 🇯🇵</h2>
+    <div class="date">August 15th, 2024</div>
+    </div>
+    <div class="time">12:00:00 <small>PM</small></div>
+    </div>
+    
 
     
     
